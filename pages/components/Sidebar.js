@@ -55,7 +55,7 @@ function Sidebar(props) {
     }
 
     return(
-        <div className="sidebar">
+        <div className="sidebar" id="sidebar">
             <div className="sidebar-header">
                 <div className="button-container">
 

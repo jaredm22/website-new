@@ -13,7 +13,7 @@ export default function Conversation(props) {
                 onClick= {handleClick}
             >
                 <div className="pinned-photo">
-                    <Image className="image-pinned" src={headshot} alt="" height={80} width={80}/>
+                    <Image className="image-pinned" src={headshot} alt="" height={70} width={70}/>
                 </div>
                 <div className="pinned-name">
                     <div className="name">Jared Min</div>

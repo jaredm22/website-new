@@ -89,8 +89,6 @@ function Messenger(props) {
     return(
         <div className="messenger-container">
             <Sidebar onChildClick={handleSelect} conversations={conversations} selectedIndex={selected}/>
-
-
             <Transcript key={`transcript${"-" + selected}`} selectedTranscript={conversations[selected]}/>
         </div>
     )
