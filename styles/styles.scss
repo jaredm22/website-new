@@ -29,12 +29,17 @@ $apple-dark-green: rgb(48, 209, 88);
 $message-gray: rgb(58, 58, 60);
 $message-blue: rgb(10, 132, 255);
 
+* {
+    scroll-behavior: smooth;
+  }
+
 .container {
     height: 100vh;
     width: 100vw;
     background: -webkit-linear-gradient(top left, #653472, #31B6F5);
     background: -moz-linear-gradient(top left, #653472, #31B6F5);
     background: linear-gradient(to bottom right, #653472, #31B6F5);;
+    scroll-behavior: smooth;
 }
 
 .messenger-container {
@@ -45,6 +50,7 @@ $message-blue: rgb(10, 132, 255);
     grid-template-columns: 320px auto;
     grid-template-rows: 100%;
     grid-template-areas: "sidebar main";
+    scroll-behavior: smooth;
 
     .sidebar {
         grid-area: sidebar;
@@ -155,6 +161,7 @@ $message-blue: rgb(10, 132, 255);
         color: $apple-dark-gray5;
         display: flex;
         flex-direction: row;
+        text-decoration: none;
       }
       
       
@@ -432,6 +439,7 @@ $message-blue: rgb(10, 132, 255);
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
+        scroll-behavior: smooth;
     
         .sidebar {
             position: relative;

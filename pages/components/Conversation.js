@@ -20,9 +20,10 @@ export default function Conversation(props) {
                 </div>
             </div>
         :
-            <div 
+            <a 
                 className={`conversation ${props.clicked ? "clicked" : "" }`}
                 onClick={handleClick} 
+                href={"#main"}
             >
                 <div className="image-container">
                     <div className="contact-photo">
@@ -38,7 +39,7 @@ export default function Conversation(props) {
                     </div>
                     <p>{props.description}</p>
                 </div>
-            </div>
+            </a>
     )
     
 }

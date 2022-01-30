@@ -6,11 +6,13 @@ function Sidebar(props) {
 
     var selected = props.selectedIndex;
 
-    var conversations = [] 
+    var conversations = []
 
     console.log(props.conversations)
+
+    var data = props.conversations || []
     
-    props.conversations.forEach((c) => {           
+    data.forEach((c) => {           
         if (c.conversationId === 0) {
             conversations.push(
                 <div className="pinned-container" key="pinned">

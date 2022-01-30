@@ -62,29 +62,12 @@ const conversations = [
 
 function Messenger(props) {
     const [selected, setSelected] = useState(0)
-    const [data, setData] = useState(null)
 
     function handleSelect(selectedId) {
         setSelected(selectedId)
     }
 
-    function getData() {
-        return axios.get("https://website-backend-new.herokuapp.com/conversations").then(res => res.data)
-    }
-
-    useEffect(() => {
-        let mounted = true;
-        getData()
-            .then(items => {
-                if(mounted) {
-                    setData(items)
-                }
-        })
-        return () => mounted = false;
-    }, [])
-
     console.log(selected)
-    console.log(data)
 
     return(
         <div className="messenger-container">
