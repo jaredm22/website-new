@@ -63,7 +63,7 @@ export default function Transcript(props) {
             
             <div className="main-header">
                 <div className="contact">
-                    To: <span className="contact-name">{props.selectedTranscript.name}</span>
+                    {/* To: <span className="contact-name">{props.selectedTranscript.name}</span> */}
                 </div>
             </div>
 
