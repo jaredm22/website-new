@@ -5,14 +5,16 @@ const conversations = [
         description: "",
         initials: "JM",
         clicked: true,
-        numMessages: 3,
-        lastSentMessageIndex: -1,
+        numMessages: 7,
+        lastSentMessageIndex: 5,
         messages: [
             {sent: false, message: "Hi! Welcome to my website."},
             {sent: false, message: "My name is Jared and I'm a software developer."},
             {sent: false, message: "I built this website as a place where people could come learn more about me. It mimics the Apple iMessage app in both (basic) functionality and look, so feel free to try and type a message."},
-            // {sent: false, message: ""},
-            // {sent: true, message: "This is a really cool website"}
+            {sent: true, message: "Very cool. Anything I need to know about navigating the site?"},
+            {sent: false, message: "Nope! If you are a MacOS user than you should be pretty familiar with this site already. If not then kudos to you for not spending 4.8 gazillion on the new Macbook Pro. But the site basically functions like any other site, where each of the conversations essentially equates to a tab. So just click between the different tabs to learn about what you're looking for."},
+            {sent: true, message: "Awesome! I'll check it out."},
+            {sent: false, message: "Cool beans."}
         ]
     },
     {   
@@ -22,9 +24,10 @@ const conversations = [
         initials: "AM",
         clicked: false,
         numMessages: 3,
+        lastSentMessageIndex: -1,
         messages: [
-            {sent: false, message: "Hey there, thanks for stopping by. What would you like to know about me."},
-            {sent: false, message: "Hi! Welcome to my website."},
+            {sent: false, message: "Hey there, thanks for stopping by. What would you like to know about me?"},
+            {sent: true, message: "Where are you from?"},
             {sent: false, message: "Hi! Welcome to my website."}
         ]
     },
@@ -35,6 +38,7 @@ const conversations = [
         initials: "AM",
         clicked: false,
         numMessages: 6,
+        lastSentMessageIndex: 4,
         messages: [
             {sent: false, message: "Thanks again for stopping by. What would you like to know about the site?"},
             {sent: true, message: "What was the inspiration behind the design?"},
@@ -52,6 +56,7 @@ const conversations = [
         initials: "P",
         clicked: false,
         numMessages: 4,
+        lastSentMessageIndex: -1,
         messages: [
             {sent: false, message: "RPOD Tracker", image: "RPOD"},
             {sent: false, message: "RPOD Tracker"},
@@ -67,6 +72,7 @@ const conversations = [
         initials: "CM",
         clicked: false,
         numMessages: 3,
+        lastSentMessageIndex: -1,
         messages: [
             {sent: false, message: ""},
             {sent: false, message: "Hi! Welcome to my website."},
