@@ -21,14 +21,7 @@ export default function Transcript(props) {
             }
 
 
-    const [ state, setState ] = useState({
-        input: "",
-        messages: props.selectedTranscript.messages || [],
-        numMessages: props.selectedTranscript.numMessages || 0,
-        lastSentMessageIndex: props.selectedTranscript.lastSentMessageIndex || -1,
-    })
-   
-    
+    const [ state, setState ] = useState(initialState)
 
     function createMessage() {
         setState({
