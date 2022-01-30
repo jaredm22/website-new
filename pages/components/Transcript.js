@@ -24,7 +24,7 @@ export default function Transcript(props) {
         }) 
     }
 
-    if (state.messages) {
+    if (state.messages != []) {
         var messages = [];
         for (var i = 0; i < state.numMessages; i++) {
             messages.push(
@@ -41,9 +41,9 @@ export default function Transcript(props) {
         }
     }
 
-    // console.log(state.messages)
+    console.log(state)
  
-    return(state.messages ?
+    return(state.messages != [] ?
         <div className="main" id="main">
             
             <div className="main-header">
