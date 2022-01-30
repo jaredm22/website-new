@@ -9,8 +9,9 @@ export default function Conversation(props) {
 
     return(
         props.type === "pinned" ?
-            <div className={`pinned ${props.clicked ? "clicked" : "" }`} 
+            <a className={`pinned ${props.clicked ? "clicked" : "" }`} 
                 onClick= {handleClick}
+                href={"#main"}
             >
                 <div className="pinned-photo">
                     <Image className="image-pinned" src={headshot} alt="" height={70} width={70}/>
@@ -18,7 +19,7 @@ export default function Conversation(props) {
                 <div className="pinned-name">
                     <div className="name">Jared Min</div>
                 </div>
-            </div>
+            </a>
         :
             <a 
                 className={`conversation ${props.clicked ? "clicked" : "" }`}

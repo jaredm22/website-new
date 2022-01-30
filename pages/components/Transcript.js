@@ -1,6 +1,8 @@
+import Image from 'next/image';
 import { useState } from 'react';
 // import { format } from 'date-fns';
 import Message from './Message';
+import backButton from '../../public/left.png'
 
 export default function Transcript(props) {
 
@@ -8,8 +10,8 @@ export default function Transcript(props) {
         props.selectedTranscript ?
             {
                 input: "",
-                messages: props.selectedTranscript.messages || [],
-                numMessages: props.selectedTranscript.numMessages || 0,
+                messages: props.selectedTranscript.messages,
+                numMessages: props.selectedTranscript.numMessages,
                 lastSentMessageIndex: props.selectedTranscript.lastSentMessageIndex || -1,
             }
         : 
@@ -63,6 +65,9 @@ export default function Transcript(props) {
             
             <div className="main-header">
                 <div className="contact">
+                    <a className="back-button" href='#sidebar'>
+                        <Image src={backButton} height={40} width={40}/>    
+                    </a> 
                     {/* To: <span className="contact-name">{props.selectedTranscript.name}</span> */}
                 </div>
             </div>

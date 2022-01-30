@@ -1,6 +1,8 @@
 import Conversation from "./Conversation"
 import compose from '../../public/compose.svg'
 import Image from "next/image"
+import githubLogo from '../../public/GitHub.png'
+import spotifyLogo from '../../public/spotify.png'
 
 function Sidebar(props) {
 
@@ -47,6 +49,17 @@ function Sidebar(props) {
             <div className="sidebar-header">
                 <div className="button-container">
 
+                    <a className="github-button" href={"https://github.com/jaredm22"}>
+                        <Image src={githubLogo} height={25} width={25}/>
+                    </a>
+
+                    <a className="linkedin-button" href={"https://www.linkedin.com/in/jaredmin/"}>
+                        in
+                    </a>
+
+                    <a className="spotify-button" href={"https://www.linkedin.com/in/jaredmin/"}>
+                        <Image src={spotifyLogo} height={25} width={25}/>
+                    </a>
                 </div>
 
                 <Image src={compose} height={20} width={20}/>

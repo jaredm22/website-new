@@ -39,7 +39,7 @@ $message-blue: rgb(10, 132, 255);
     background: -webkit-linear-gradient(top left, #653472, #31B6F5);
     background: -moz-linear-gradient(top left, #653472, #31B6F5);
     background: linear-gradient(to bottom right, #653472, #31B6F5);;
-    scroll-behavior: smooth;
+    overflow: hidden;
 }
 
 .messenger-container {
@@ -50,7 +50,6 @@ $message-blue: rgb(10, 132, 255);
     grid-template-columns: 320px auto;
     grid-template-rows: 100%;
     grid-template-areas: "sidebar main";
-    scroll-behavior: smooth;
 
     .sidebar {
         grid-area: sidebar;
@@ -69,6 +68,47 @@ $message-blue: rgb(10, 132, 255);
             align-items: center;
             justify-content: space-between;
             padding: 0 1rem;
+
+            .button-container {
+                display: flex;
+                flex-direction: row;
+                height: 100%;
+                width: 90px;
+                align-items: center;
+                justify-content: space-evenly;
+
+                .github-button {
+                    background: $apple-sunset-orange;
+                    border-radius: 50%;
+                    height: 25px;
+                    width: 25px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .linkedin-button {
+                    background: $apple-pastel-orange;
+                    border-radius: 50%;
+                    height: 25px;
+                    width: 25px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-weight: 600;
+                }
+
+                .spotify-button {
+                    // background: $apple-pastel-orange;
+                    border-radius: 50%;
+                    height: 25px;
+                    width: 25px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-weight: 600;
+                }
+            }
         }
 
         .sidebar-content {
@@ -106,6 +146,7 @@ $message-blue: rgb(10, 132, 255);
         flex-direction: column;
         align-items: center;
         color: $apple-dark-gray1;
+        text-decoration: none;
     }
       
     .pinned-photo {
@@ -242,6 +283,10 @@ $message-blue: rgb(10, 132, 255);
     justify-content: center;
     font-size: 13px;
     font-weight: 650;
+
+    .back-button {
+        color: white
+    }
   
     .contact {
       margin-left: 1rem;
@@ -386,11 +431,11 @@ $message-blue: rgb(10, 132, 255);
     -webkit-backdrop-filter: blur(60px) saturate(140%);
     
     .message-input {
-      height: 30%;
+      height: 30px;
       width: 92%;
       background-color: $apple-dark-gray6;
       border-radius: 25px;
-      border: 0.1px solid gray;
+      border: 2px solid $apple-dark-gray2;
       padding: 5px 5px 5px 10px;
       color: white;
     }
@@ -427,8 +472,9 @@ $message-blue: rgb(10, 132, 255);
     .container {
         height: 100vh;
         width: 200vw;
-        background: $message-blue;
-        // overflow: hidden;
+        background: -webkit-linear-gradient(top left, #653472, #31B6F5);
+        background: -moz-linear-gradient(top left, #653472, #31B6F5);
+        background: linear-gradient(to bottom right, #653472, #31B6F5);;
     }
 
     .messenger-container {
