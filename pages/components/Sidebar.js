@@ -1,7 +1,7 @@
 import Conversation from "./Conversation"
 import compose from '../../public/compose.svg'
 import Image from "next/image"
-import githubLogo from '../../public/GitHub.png'
+import githubLogo from '../../public/GitHub2.png'
 import spotifyLogo from '../../public/spotify.png'
 
 function Sidebar(props) {
@@ -57,7 +57,7 @@ function Sidebar(props) {
                         in
                     </a>
 
-                    <a className="spotify-button" href={"https://www.linkedin.com/in/jaredmin/"}>
+                    <a className="spotify-button" href={"https://open.spotify.com/playlist/7j6e1aPMszy420VJVuasIt?si=cc813c354202464c"}>
                         <Image src={spotifyLogo} height={25} width={25}/>
                     </a>
                 </div>

@@ -38,7 +38,7 @@ $message-blue: rgb(10, 132, 255);
     width: 100vw;
     background: -webkit-linear-gradient(top left, #653472, #31B6F5);
     background: -moz-linear-gradient(top left, #653472, #31B6F5);
-    background: linear-gradient(to bottom right, #653472, #31B6F5);;
+    background: linear-gradient(to bottom right, #653472, #31B6F5);
     overflow: hidden;
 }
 
@@ -50,6 +50,7 @@ $message-blue: rgb(10, 132, 255);
     grid-template-columns: 320px auto;
     grid-template-rows: 100%;
     grid-template-areas: "sidebar main";
+    overflow: hidden;
 
     .sidebar {
         grid-area: sidebar;
@@ -73,7 +74,7 @@ $message-blue: rgb(10, 132, 255);
                 display: flex;
                 flex-direction: row;
                 height: 100%;
-                width: 90px;
+                width: 100px;
                 align-items: center;
                 justify-content: space-evenly;
 
@@ -96,6 +97,7 @@ $message-blue: rgb(10, 132, 255);
                     justify-content: center;
                     align-items: center;
                     font-weight: 600;
+                    color: white;
                 }
 
                 .spotify-button {
@@ -339,8 +341,31 @@ $message-blue: rgb(10, 132, 255);
       border-radius: 15px;
       color: white;
       font-size: 15px;
-      font-weight: 525;
+      font-weight: 525;      
     }
+
+    .link-message {
+        position: relative;
+        height: 250px;
+        width: 40%;
+        // padding: 6px 12px;
+        margin-bottom: 3px;
+        border-radius: 15px;
+        color: white;
+        font-size: 15px;
+        font-weight: 525;  
+        overflow: hidden;
+
+        .message-top {
+            height: 80%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+        }
+    }
+    
     
     .received {
       margin-left: 1em;
