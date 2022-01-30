@@ -4,8 +4,6 @@ import Message from './Message';
 
 export default function Transcript(props) {
     
-    // const [inputMessage, setInputMessage] = useState("")
-
     const [ state, setState ] = useState({
         input: "",
         messages: props.selectedTranscript.messages || [],
