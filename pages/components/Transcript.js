@@ -24,19 +24,21 @@ export default function Transcript(props) {
         }) 
     }
 
-    var messages = [];
-    for (var i = 0; i < state.numMessages; i++) {
-        messages.push(
-            <Message 
-                key={`${state.conversationId}-${i}`} 
-                type={state.messages[i].sent ? "sent" : "received"} 
-                text={state.messages[i].message} 
-                last={ i !== state.numMessages - 1 ?
-                    state.messages[i+1].sent !== state.messages[i].sent
-                    : true
-                }
-        />)
-        if (state.lastSentMessageIndex === i)  messages.push(<p className="delivered">Delivered</p>);
+    if (state.messages) {
+        var messages = [];
+        for (var i = 0; i < state.numMessages; i++) {
+            messages.push(
+                <Message 
+                    key={`${state.conversationId}-${i}`} 
+                    type={state.messages[i].sent ? "sent" : "received"} 
+                    text={state.messages[i].message} 
+                    last={ i !== state.numMessages - 1 ?
+                        state.messages[i+1].sent !== state.messages[i].sent
+                        : true
+                    }
+            />)
+            if (state.lastSentMessageIndex === i)  messages.push(<p className="delivered">Delivered</p>);
+        }
     }
 
     console.log(state.messages)
@@ -75,9 +77,7 @@ export default function Transcript(props) {
                 <div className="main-right">
 
                 </div>
-                
             </div>
-
         </div>
     )
 }
