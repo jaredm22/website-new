@@ -41,11 +41,11 @@ export default function Transcript(props) {
         }
     }
 
-    console.log(state.messages)
+    // console.log(state.messages)
  
-    return(
+    return(state.messages ?
         <div className="main" id="main">
-
+            
             <div className="main-header">
                 <div className="contact">
                     To: <span className="contact-name">{props.selectedTranscript.name}</span>
@@ -77,7 +77,11 @@ export default function Transcript(props) {
                 <div className="main-right">
 
                 </div>
-            </div>
+            </div> 
         </div>
+
+        : 
+
+        <div className='main' id="main"></div>
     )
 }
