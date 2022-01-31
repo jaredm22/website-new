@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 // import { format } from 'date-fns';
 import Message from './Message';
-import backButton from '../../public/left.png'
+import backButton from '../../public/left-white.png'
 
 export default function Transcript(props) {
 
