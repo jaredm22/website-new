@@ -36,9 +36,13 @@ $message-blue: rgb(10, 132, 255);
 .container {
     height: 100vh;
     width: 100vw;
-    background: -webkit-linear-gradient(top left, #653472, #31B6F5);
-    background: -moz-linear-gradient(top left, #653472, #31B6F5);
-    background: linear-gradient(to bottom right, #653472, #31B6F5);
+    // background: -webkit-linear-gradient(top left, #653472, #31B6F5);
+    // background: -moz-linear-gradient(top left, #653472, #31B6F5);
+    // background: linear-gradient(to bottom right, #653472, #31B6F5);
+    // background: #DD7EF6;
+    background: -webkit-linear-gradient(top left, #DD7EF6, #31B6F5);
+    background: -moz-linear-gradient(top left, #DD7EF6, #31B6F5);
+    background: linear-gradient(to bottom right, #DD7EF6, #31B6F5);
     overflow: hidden;
 }
 
@@ -346,8 +350,8 @@ $message-blue: rgb(10, 132, 255);
 
     .link-message {
         position: relative;
-        height: 250px;
-        width: 40%;
+        height: 300px;
+        width: 400px;
         // padding: 6px 12px;
         margin-bottom: 3px;
         border-radius: 15px;
@@ -355,15 +359,6 @@ $message-blue: rgb(10, 132, 255);
         font-size: 15px;
         font-weight: 525;  
         overflow: hidden;
-
-        .message-top {
-            height: 80%;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 15px;
-        }
     }
     
     
