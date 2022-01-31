@@ -32,6 +32,13 @@ export default function Message(props) {
                 <a href={"https://pixel-art-chi.vercel.app/"}>Link</a>
             </div>
         )  
+    } else if (props.link == "oldwebsite"){
+        return(
+            <div className={`message ${props.type} ${props.last ? "last" : ""}`}>
+                <a href={"https://github.com/jaredm22/personal-website"}>GitHub | </a>
+                <a href={"https://jaredmin.netlify.app/"}>Link</a>
+            </div>
+        )
     } else {
         return(
             <div className={`message ${props.type} ${props.last ? "last" : ""}`}>

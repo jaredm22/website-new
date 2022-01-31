@@ -63,7 +63,7 @@ const conversations = [
         description: "Check out my projects!",
         initials: "P",
         clicked: false,
-        numMessages: 7,
+        numMessages: 10,
         lastSentMessageIndex: -1,
         messages: [
             // {sent: false, message: "RPOD Tracker", image: "RPOD"},
@@ -75,6 +75,9 @@ const conversations = [
             {sent: false, message: "Pixel Drawing Board"},
             {sent: false, message: "I don't really remember why I decided to build this, but alas it is built. It is a pixel art drawing board and it's quite fun to mess around with. Not mobile-friendly unfortunately. This app was also built using ReactJS (you're probably noticing a theme)."},    
             {sent: false, link: "pixel"},
+            {sent: false, message: "Old Website"},
+            {sent: false, message: "This is my old website that I mention in the About this Website section. It's not mobile friendly and I'm not necessarily totally satisfied with how it works, but it's still pretty fun to play with because the act how they would on a real desktop so feel free to check it out."},    
+            {sent: false, link: "oldwebsite"},
         ]
     },
     {   
