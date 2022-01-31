@@ -4,7 +4,6 @@ import pixel from '../../public/pixelate.png'
 
 export default function Message(props) {
 
-    console.log(props)
 
     if (props.image == "RPOD") {
         return(
@@ -18,6 +17,21 @@ export default function Message(props) {
                 <Image src={pixel} height={300} width={400}/>
             </a>
         )
+    } else if (props.link == "RPOD") {
+        console.log("Happens")
+        return(
+            <div className={`message ${props.type} ${props.last ? "last" : ""}`}>
+                <a href={"https://github.com/jaredm22/RPOD-Tracker"}>GitHub | </a>
+                <a href={"https://rpod-tracker.vercel.app/"}>Link</a>
+            </div>
+        )  
+    } else if (props.link == "pixel") {
+        return(
+            <div className={`message ${props.type} ${props.last ? "last" : ""}`}>
+                <a href={"https://github.com/jaredm22/pixel-art"}>GitHub | </a>
+                <a href={"https://pixel-art-chi.vercel.app/"}>Link</a>
+            </div>
+        )  
     } else {
         return(
             <div className={`message ${props.type} ${props.last ? "last" : ""}`}>

@@ -51,6 +51,7 @@ export default function Transcript(props) {
                         : true
                     }
                     image={state.messages[i].image ? state.messages[i].image : false}
+                    link={state.messages[i].link ? state.messages[i].link : false}
             />)
             if (state.lastSentMessageIndex === i)  messages.push(<p className="delivered">Delivered</p>);
         }

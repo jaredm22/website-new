@@ -66,13 +66,15 @@ const conversations = [
         numMessages: 7,
         lastSentMessageIndex: -1,
         messages: [
-            {sent: false, message: "RPOD Tracker", image: "RPOD"},
+            // {sent: false, message: "RPOD Tracker", image: "RPOD"},
             {sent: false, message: "RPOD Tracker"},
-            {sent: false, message: "This is an app I made for my friends (click on the image to check it out). An RPOD is a random player of the day, which is any player from any sport that we deem to be 'random'. What exactly does it mean to be random? We're not sure. Which is the purpose of this app. To vote on players and try and find what players we think are random, then eventually do some data analysis and figure out the numbers behind a 'random' player. Will that actually happen? Not sure. But the app is fun."},
+            {sent: false, message: "This is an app I made for my friends. An RPOD is a random player of the day, which is any player from any sport that we deem to be 'random'. What exactly does it mean to be random? We're not sure. Which is the purpose of this app. To vote on players and try and find what players we think are random, then eventually do some data analysis and figure out the numbers behind a 'random' player. Will that actually happen? Not sure. But the app is fun."},
             {sent: false, message: "The app was built using ReactJS, with a backend built using ExpressJS, and MongoDB."},
-            {sent: false, message: "Pixel Drawing Board", image: "pixel"},
+            {sent: false, link: "RPOD"},
+            // {sent: false, message: "Pixel Drawing Board", image: "pixel"},
             {sent: false, message: "Pixel Drawing Board"},
             {sent: false, message: "I don't really remember why I decided to build this, but alas it is built. It is a pixel art drawing board and it's quite fun to mess around with. Not mobile-friendly unfortunately. This app was also built using ReactJS (you're probably noticing a theme)."},    
+            {sent: false, link: "pixel"},
         ]
     },
     {   
