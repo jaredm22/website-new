@@ -16,7 +16,7 @@ const conversations = [
             {sent: false, message: "My name is Jared and I'm a software developer."},
             {sent: false, message: "I built this website as a place where people could come learn more about me. It mimics the Apple iMessage app in both (basic) functionality and look, so feel free to try and type a message. Also, in lieu of the traditional macOS application buttons you can find links to my GitHub, LinkedIn, and 2022 Spotify playlist on the top left of the app."},
             {sent: true, message: "Very cool. Anything else I need to know about navigating the site?"},
-            {sent: false, message: "Nope! If you are a macOS user than you should be pretty familiar with this site already. If not then kudos to you for not spending 4.8 gazillion on the new Macbook Pro. But the site basically functions like any other site, where each of the conversations essentially equates to a tab. So just click between the different tabs to learn about what you're looking for."},
+            {sent: false, message: "Nope! If you are a macOS user than you should be pretty familiar with this site already. If not then kudos to you for not spending a gazillion on the new Macbook Pro. But the site basically functions like any other site, where each of the conversations essentially equates to a tab. So just click between the different tabs to learn about what you're looking for."},
             {sent: true, message: "Awesome! I'll check it out."},
             {sent: false, message: "Cool beans."}
         ]
@@ -34,7 +34,7 @@ const conversations = [
             {sent: true, message: "Where are you from?"},
             {sent: false, message: "I'm originally from Pennsylvania, but I've been in the Boston area ever since I started attending Boston University in 2017."},
             {sent: true, message: "Nice! What are your hobbies?"},
-            {sent: false, message: "I'm really into sports (mainly basketball, football, and baseball) and used to play baseball before I started attending college. My teams are the Sixers, Eagles, and Phillies, and unfortunately all of those teams seem to be stuck in some sort of mediocrity purgatory so I'm doing great. I'm also quite into music, and although I don't play as much as I should I am known to dabble on the guitar. And sometimes when I'm really feeling fancy I play the one song I know on the piano, River Flows in You."},
+            {sent: false, message: "I'm really into sports (mainly basketball, football, and baseball) and used to play baseball before I started attending college. My teams are the Sixers, Eagles, and Phillies, and unfortunately most of those teams seem to be stuck in some sort purgatory at the moment. I'm also quite into music, and although I don't play as much as I should I am known to dabble on the guitar. And sometimes when I'm really feeling fancy I play the one song I know on the piano, River Flows in You."},
             {sent: true, message: "Very cool Jared. Well not really, but because I'm writing all of the messages on the site I'll say it is."},
             {sent: false, message: "Well thanks Jared, always glad you have my back."}
         ]
@@ -50,10 +50,10 @@ const conversations = [
         messages: [
             {sent: false, message: "Thanks again for stopping by. What would you like to know about the site?"},
             {sent: true, message: "What was the inspiration behind the design?"},
-            {sent: false, message: "I've always appreciated the design of Apple products, and when I first started to learn how to code my very first idea for a personal project was to build an iMessage-like app where I could talk about myself in almost a conversation-like manner (I've been told I'm a good texter). I did succeed in building what I envisioned, only about 12x uglier than I wanted. So thankfully I've burned the source code for that. The second iteration of my website was one that mimicked not only iMessage but other macOS apps like Spotify as well (https://jaredmin.netlify.app/). Unfortunately, trying to turn a desktop clone into a mobile app wasn't as easy as I envisioned so I had to scrap that too. The link is above though if you'd like to check that out."},
+            {sent: false, message: "I've always appreciated the design of Apple products, and when I first started to learn how to code my very first idea for a personal project was to build an iMessage-like app where I could talk about myself in almost a conversation-like manner (I've been told I'm a good texter). I did succeed in building what I envisioned, just a lot uglier than I wanted. So thankfully I've burned the source code for that. The second iteration of my website was one that mimicked not only iMessage but other macOS apps like Spotify as well (https://jaredmin.netlify.app/). Unfortunately, trying to turn a desktop clone into a mobile app wasn't as easy as I envisioned so I had to scrap that too. The link is above though if you'd like to check that out."},
             {sent: false, message: "As I've gotten better at programming my personal goal has always been to get to the point where I could build the iMessage personal site that I've always wanted. And this is that site. So I hope you like it!"},
             {sent: true, message: "That's really neat. What did you use to build the site?"},
-            {sent: false, message: "I built the site using ReactJS and a lot of blood, sweat, and tears. Just kidding. Just Javascript. Which I guess does cause some tears on occasion."},
+            {sent: false, message: "I built the site using ReactJS and some elbow grease."},
 
         ]
     },
