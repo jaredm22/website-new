@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 // import { format } from 'date-fns';
 import Message from './Message';
 import backButton from '../../public/left-white.png'
@@ -22,6 +22,27 @@ export default function Transcript(props) {
                 lastSentMessageIndex: -1,
             }
 
+            
+    function getWindowDimensions() {
+        const { innerWidth: width, innerHeight: height } = window;
+        return {
+        width,
+        height
+        };
+    }
+    
+    const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+    
+    useEffect(() => {
+        function handleResize() {
+            setWindowDimensions(getWindowDimensions());
+        }
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+            
+    console.log(windowDimensions)
 
     const [ state, setState ] = useState(initialState)
 
@@ -68,7 +89,10 @@ export default function Transcript(props) {
             <div className="main-header">
                 <div className="contact">
                     <a className="back-button" href='#sidebar'>
-                        <Image src={backButton} height={40} width={40}/>    
+                        {windowDimensions[innerWidth] <= 640 ?
+                            <Image src={backButton} height={40} width={40}/>   
+                            : false 
+                        }
                     </a> 
                     {/* To: <span className="contact-name">{props.selectedTranscript.name}</span> */}
                 </div>

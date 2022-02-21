@@ -53,8 +53,7 @@ const conversations = [
             {sent: false, message: "I've always appreciated the design of Apple products, and when I first started to learn how to code my very first idea for a personal project was to build an iMessage-like app where I could talk about myself in almost a conversation-like manner (I've been told I'm a good texter). I did succeed in building what I envisioned, just a lot uglier than I wanted. So thankfully I've burned the source code for that. The second iteration of my website was one that mimicked not only iMessage but other macOS apps like Spotify as well (https://jaredmin.netlify.app/). Unfortunately, trying to turn a desktop clone into a mobile app wasn't as easy as I envisioned so I had to scrap that too. The link is above though if you'd like to check that out."},
             {sent: false, message: "As I've gotten better at programming my personal goal has always been to get to the point where I could build the iMessage personal site that I've always wanted. And this is that site. So I hope you like it!"},
             {sent: true, message: "That's really neat. What did you use to build the site?"},
-            {sent: false, message: "I built the site using ReactJS and some elbow grease."},
-
+            {sent: false, message: "I built the site using ReactJS and a lot of elbow grease."},
         ]
     },
     {   
