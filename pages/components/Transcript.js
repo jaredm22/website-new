@@ -23,17 +23,20 @@ export default function Transcript(props) {
             }
 
             
-    function getWindowDimensions() {
-        const { innerWidth: width, innerHeight: height } = window;
-        return {
-        width,
-        height
-        };
-    }
     
-    const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+    
+    const [windowDimensions, setWindowDimensions] = useState({width: 0, height: 0});
     
     useEffect(() => {
+
+        function getWindowDimensions() {
+            const { innerWidth: width, innerHeight: height } = window;
+            return {
+            width,
+            height
+            };
+        }
+
         function handleResize() {
             setWindowDimensions(getWindowDimensions());
         }
@@ -89,7 +92,7 @@ export default function Transcript(props) {
             <div className="main-header">
                 <div className="contact">
                     <a className="back-button" href='#sidebar'>
-                        {windowDimensions[innerWidth] <= 640 ?
+                        {windowDimensions.innerWidth <= 640 ?
                             <Image src={backButton} height={40} width={40}/>   
                             : false 
                         }
